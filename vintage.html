@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Vintage 80s & 90s — Retro Clothing</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="vintage.css" />
+</head>
+<body class="vintage-page">
+  <header class="site-header vintage-header">
+    <div class="brand">
+      <a href="index.html" class="logo">Vintage 80s & 90s</a>
+    </div>
+    <nav class="main-nav">
+      <a href="index.html">Home</a>
+      <a href="#jackets">Jackets</a>
+      <a href="#jeans">Jeans</a>
+      <a href="#tees">Tees</a>
+      <a href="cart.html" id="cart-toggle">Your Antique (<span id="cart-count">0</span>)</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="vintage-hero">
+      <div class="hero-content">
+        <h1>Neon Nights & Cassette Days</h1>
+        <p>Authentic retro pieces from the 80s and 90s — vibrant, bold, nostalgic.</p>
+      </div>
+    </section>
+
+    <section id="jackets" class="products vintage-products">
+      <h2>Retro Jackets</h2>
+      <div class="product-grid">
+        <div class="product-card">
+          <img src="retro jacket.jpg" alt="80s Retro Jacket">
+          <h3>80s Retro Jacket</h3>
+          <p>Windbreaker with authentic 80s color blocking.</p>
+          <div class="product-actions">
+            <button class="btn add-to-cart" data-id="jacket-80s" data-title="80s Retro Jacket" data-price="79.00">Add to cart</button>
+          </div>
+        </div>
+
+        <div class="product-card">
+          <img src="nirvana tee.jpg" alt="Retro Graphic Tee">
+          <h3>Retro Graphic Tee</h3>
+          <p>Iconic print tee with vintage washes.</p>
+          <div class="product-actions">
+            <button class="btn add-to-cart" data-id="tee-retro" data-title="Retro Graphic Tee" data-price="39.00">Add to cart</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="jeans" class="products vintage-products">
+      <h2>Classic Jeans</h2>
+      <div class="product-grid">
+        <div class="product-card">
+          <img src="retro pants.jpg" alt="90s High-Waist Jeans">
+          <h3>90s High-Waist Jeans</h3>
+          <p>Classic denim with vintage wash and fit.</p>
+          <div class="product-actions">
+            <button class="btn add-to-cart" data-id="jeans-90s" data-title="90s High-Waist Jeans" data-price="59.00">Add to cart</button>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <aside id="cart-panel" class="cart-panel hidden">
+    <div class="cart-header">
+      <h3>Your Cart</h3>
+      <button id="cart-close" class="btn small">Close</button>
+    </div>
+    <div id="cart-items"></div>
+    <div class="cart-footer">
+      <div class="cart-total">Total: $<span id="cart-total">0.00</span></div>
+      <button id="checkout" class="btn primary">Checkout</button>
+    </div>
+  </aside>
+
+  <footer class="site-footer vintage-footer">
+    <div>© Vintage 80s & 90s Collection</div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

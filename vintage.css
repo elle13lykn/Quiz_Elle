@@ -1,0 +1,56 @@
+/* Vintage 80s & 90s theme overrides */
+.vintage-page, .vintage-header, .vintage-footer {
+  --accent:#ff5ea0;
+  --muted:#333;
+}
+
+/* neon hero */
+.vintage-hero{
+  min-height:38vh;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  background-image: url(vintage\ bg.jpg);
+  color:#fff;
+  text-align:center;
+  padding:40px 20px;
+  border-bottom:6px solid rgba(255,94,160,0.14);
+}
+.vintage-hero h1{font-family: 'Courier New', monospace; font-size:2.2rem; letter-spacing:2px; text-shadow:0 2px 14px rgba(255,94,160,0.28)}
+
+/* retro card look */
+.vintage-page .product-card{
+  background: linear-gradient(180deg,#f7f7f7,#f0f0f0);
+  border:2px solid rgba(0,0,0,0.08);
+  position:relative;
+  overflow:hidden;
+}
+.vintage-page .product-card::before{
+  content:"";
+  position:absolute;
+  left:-30%;
+  top:60%;
+  width:200%;
+  height:40%;
+  transform:rotate(-8deg);
+  background:linear-gradient(90deg, rgba(255,94,160,0.06), rgba(0,0,0,0));
+  pointer-events:none;
+}
+
+/* neon buttons for vintage */
+.vintage-page .btn.primary{
+  background:linear-gradient(90deg,#ff5ea0,#ffb86b);
+  color:#fff;
+  box-shadow:0 12px 28px rgba(255,94,160,0.12);
+}
+
+/* slight scanline overlay for VHS feel */
+.vintage-page::after{
+  content:"";
+  position:fixed;
+  left:0; right:0; top:0; bottom:0;
+  pointer-events:none;
+  background-image: linear-gradient(rgba(255,255,255,0.01) 1px, transparent 1px);
+  background-size: 100% 6px;
+  opacity:0.12;
+}

@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Fantasy Kingdom Wear — Cloaks, Armor, Elven</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="fantasy.css" />
+</head>
+<body class="fantasy-page">
+  <header class="site-header fantasy-header">
+    <div class="brand">
+      <a href="index.html" class="logo">Fantasy Kingdom</a>
+    </div>
+    <nav class="main-nav">
+      <a href="index.html">Home</a>
+      <a href="#cloaks">Cloaks</a>
+      <a href="#armor">Armor</a>
+      <a href="#elven">Elven Wear</a>
+      <a href="cart.html" id="cart-toggle">Your Antique (<span id="cart-count">0</span>)</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="fantasy-hero">
+      <div class="hero-content">
+        <h1>Welcome to the Kingdom</h1>
+        <p>Handcrafted cloaks, armor sets, and elven garments — each piece tells a story.</p>
+      </div>
+    </section>
+
+    <section id="cloaks" class="products">
+      <h2>Royal & Mystic Cloaks</h2>
+      <div class="product-grid">
+        <div class="product-card">
+          <img src="velvet cloak.jpg" alt="Royal Velvet Cloak">
+          <h3>Royal Velvet Cloak</h3>
+          <p>Deep crimson velvet with gold-thread embroidery and royal crest.</p>
+          <div class="product-actions">
+            <button class="btn add-to-cart" data-id="cloak-royal" data-title="Royal Velvet Cloak" data-price="129.00">Add to cart</button>
+          </div>
+        </div>
+
+        <div class="product-card">
+          <img src="green cloak.jpg" alt="Mystic Forest Cloak">
+          <h3>Mystic Forest Cloak</h3>
+          <p>Emerald-green cloak with leaf-stitched patterns and hood.</p>
+          <div class="product-actions">
+            <button class="btn add-to-cart" data-id="cloak-forest" data-title="Mystic Forest Cloak" data-price="115.00">Add to cart</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="armor" class="products">
+      <h2>Armor Sets</h2>
+      <div class="product-grid">
+        <div class="product-card">
+          <img src="knight.jpg" alt="Steel Knight Armor">
+          <h3>Steel Knight Armor</h3>
+          <p>Forged steel set, polished and engraved with runes.</p>
+          <div class="product-actions">
+            <button class="btn add-to-cart" data-id="armor-steel" data-title="Steel Knight Armor" data-price="499.00">Add to cart</button>
+          </div>
+        </div>
+
+        <div class="product-card">
+          <img src="paladin.jpg" alt="Golden Paladin Armor">
+          <h3>Golden Paladin Armor</h3>
+          <p>Gold-plated armor with ceremonial details and crest.</p>
+          <div class="product-actions">
+            <button class="btn add-to-cart" data-id="armor-paladin" data-title="Golden Paladin Armor" data-price="799.00">Add to cart</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="elven" class="products">
+      <h2>Elven Dresses & Robes</h2>
+      <div class="product-grid">
+        <div class="product-card">
+          <img src="elven.jpg" alt="Emerald Elven Gown">
+          <h3>Emerald Elven Gown</h3>
+          <p>Light, flowing gown with shimmering magical threads.</p>
+          <div class="product-actions">
+            <button class="btn add-to-cart" data-id="gown-elven" data-title="Emerald Elven Gown" data-price="199.00">Add to cart</button>
+          </div>
+        </div>
+
+        <div class="product-card">
+          <img src="white robe.jpg" alt="Moonlight Robe">
+          <h3>Moonlight Robe</h3>
+          <p>Silver-white robe infused with starlit beauty and embroidery.</p>
+          <div class="product-actions">
+            <button class="btn add-to-cart" data-id="robe-moon" data-title="Moonlight Robe" data-price="149.00">Add to cart</button>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <aside id="cart-panel" class="cart-panel hidden">
+    <div class="cart-header">
+      <h3>Your Cart</h3>
+      <button id="cart-close" class="btn small">Close</button>
+    </div>
+    <div id="cart-items"></div>
+    <div class="cart-footer">
+      <div class="cart-total">Total: $<span id="cart-total">0.00</span></div>
+      <button id="checkout" class="btn primary">Checkout</button>
+    </div>
+  </aside>
+
+  <footer class="site-footer fantasy-footer">
+    <div>© Fantasy Kingdom Collection</div>
+  </footer>
+</body>
+</html>

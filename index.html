@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Fantasy & Vintage Shop</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="brand">
+      <a href="index.html" class="logo">Fantasy & Vintage</a>
+    </div>
+    <nav class="main-nav">
+      <a href="fantasy.html">Fantasy Kingdom</a>
+      <a href="vintage.html">Vintage 80s & 90s</a>
+      <a href="cart.html" id="cart-toggle">Your Antique (<span id="cart-count">0</span>)</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="home-hero" style="background-image:url('/mnt/data/IMG_20251119_142033.jpg')">
+      <div class="hero-inner">
+        <h1>Two Worlds of Style</h1>
+        <p>Shop handcrafted cloaks, armor & elven wear — or relive the best of the 80s & 90s.</p>
+        <div class="hero-links">
+          <a class="btn primary" href="fantasy.html">Enter the Kingdom</a>
+          <a class="btn outline" href="vintage.html">Explore Vintage</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="featured">
+      <h2>Featured Collections</h2>
+      <div class="cards">
+        <article class="card">
+          <img src="velvet cloak.jpg" alt="Royal Velvet Cloak">
+          <h3>Royal Velvet Cloak</h3>
+          <p>Velvet cloak with gold trim — perfect for pageantry and cosplay.</p>
+          <div class="card-actions">
+            <button class="btn add-to-cart" data-id="cloak-royal" data-title="Royal Velvet Cloak" data-price="129.00">Add to cart — $129</button>
+          </div>
+        </article>
+
+        <article class="card">
+          <img src="retro jacket.jpg" alt="80s Retro Jacket">
+          <h3>80s Retro Jacket</h3>
+          <p>Colorful windbreaker with authentic retro styling.</p>
+          <div class="card-actions">
+            <button class="btn add-to-cart" data-id="jacket-80s" data-title="80s Retro Jacket" data-price="79.00">Add to cart — $79</button>
+          </div>
+        </article>
+
+        <article class="card">
+          <img src="elven.jpg" alt="Elven Gown">
+          <h3>Emerald Elven Gown</h3>
+          <p>Flowing gown woven with shimmering threads.</p>
+          <div class="card-actions">
+            <button class="btn add-to-cart" data-id="gown-elven" data-title="Emerald Elven Gown" data-price="199.00">Add to cart — $199</button>
+          </div>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <aside id="cart-panel" class="cart-panel hidden">
+    <div class="cart-header">
+      <h3>Your Cart</h3>
+      <button id="cart-close" class="btn small">Close</button>
+    </div>
+    <div id="cart-items"></div>
+    <div class="cart-footer">
+      <div class="cart-total">Total: $<span id="cart-total">0.00</span></div>
+      <button id="checkout" class="btn primary">Checkout</button>
+    </div>
+  </aside>
+
+  <footer class="site-footer">
+    <div>© Fantasy & Vintage Shop</div>
+    <div>Contact: support@fantasyvintage.com • Instagram: @fantasyvintage.shop</div>
+  </footer>
+</body>
+</html>

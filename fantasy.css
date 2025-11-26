@@ -1,0 +1,61 @@
+/* Fantasy theme overrides */
+.fantasy-page, .fantasy-header, .fantasy-footer {
+  --accent: #d4b86a;
+  --muted: #5b452f;
+}
+.fantasy-hero{
+  min-height:44vh;
+  background-image: url('fantasy\ bg.jpg');
+  background-size:cover;
+  background-position:center;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  color:#f7ecd8;
+  text-shadow:0 2px 10px rgba(0,0,0,0.6);
+  border-bottom:6px solid rgba(212,184,106,0.14);
+}
+.fantasy-hero .hero-content{
+  background:rgba(12,8,5,0.45);
+  padding:30px;
+  border-radius:12px;
+  border:1px solid rgba(212,184,106,0.2);
+}
+
+/* enchanted look for product cards */
+.product-card{
+  background: linear-gradient(180deg,#fff9f0,#f8f0e3);
+  border:3px solid rgba(184,143,59,0.85);
+  color:#2b1e0f;
+  transition:transform .25s ease, box-shadow .25s ease;
+}
+.product-card:hover{
+  transform:translateY(-8px) scale(1.02);
+  box-shadow:0 20px 40px rgba(201,168,106,0.18), 0 0 18px rgba(201,168,106,0.12) inset;
+}
+
+/* golden accent buttons */
+.fantasy-page .btn.primary{
+  background:linear-gradient(180deg,#d4b86a,#b88f3b);
+  color:#1a1209;
+  box-shadow:0 8px 18px rgba(184,143,59,0.15);
+}
+
+/* subtle floating and sparkle */
+@keyframes floatY {
+  0%{transform:translateY(0)}
+  50%{transform:translateY(-10px)}
+  100%{transform:translateY(0)}
+}
+.fantasy-hero .hero-content h1{animation:floatY 5s infinite ease-in-out}
+
+/* particle overlay */
+.fantasy-page::after{
+  content:"";
+  position:fixed;
+  left:0; right:0; top:0; bottom:0;
+  pointer-events:none;
+  background-image: radial-gradient(rgba(255,255,255,0.12) 1px, transparent 1px);
+  background-size: 6px 6px;
+  opacity:0.25;
+}
